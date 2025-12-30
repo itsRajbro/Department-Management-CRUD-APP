@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Department Management System</h1>
+
+<div class="container">
+
+    <h2>Add Department</h2>
+    <input type="text" id="name" placeholder="Department Name">
+    <input type="text" id="location" placeholder="Location">
+    <button onclick="addDepartment()">Add</button>
+
+    <h2>Update Department</h2>
+    <input type="number" id="updateId" placeholder="Department ID">
+    <input type="text" id="updateName" placeholder="New Name">
+    <input type="text" id="updateLocation" placeholder="New Location">
+    <button onclick="updateDepartment()">Update</button>
+
+    <h2>All Departments</h2>
+    <button onclick="getDepartments()">Load Departments</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="deptTable"></tbody>
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
